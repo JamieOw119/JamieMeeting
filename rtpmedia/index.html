@@ -19,12 +19,12 @@
       <div>
         Input username: 
         <input id="name" type="text" maxlength="12" required autocomplete="username" inputmode="verbatim" placeholder="Username">
-        <input type="button" name="login" value="加入" onclick="connect()">
+        <input type="button" name="login" value="Join" onclick="connect()">
       </div>
       <div>
         Setting video code rate(kbps): 
         <input id="bitrate" type="number" maxlength="12" required>
-        <input type="button" id="updateBitrate" value="更新" onclick="updateBitrate()" disabled>
+        <input type="button" id="updateBitrate" value="Update" onclick="updateBitrate()" disabled>
       </div>
       <div>
         Choosing video coding format: 
@@ -33,10 +33,10 @@
           <option value="VP9">VP9</option>
           <option value="H264">H264</option>
         </select>
-        <input type="button" id="selectCodec" value="选择" onclick="selectCodec()">
+        <input type="button" id="selectCodec" value="Choose" onclick="selectCodec()">
       </div>
       <div>
-        <input type="checkbox" id="replace" value="true" onclick="replaceBackground()" disabled>替换背景
+        <input type="checkbox" id="replace" value="true" onclick="replaceBackground()" disabled>Replace background
       </div>
     </div>
     <ul class="userlistbox"></ul>

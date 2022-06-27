@@ -1,0 +1,29 @@
+<!doctype html>
+<!--
+  Dove into Webrtc example for RTCPeerConnection
+-->
+<html>
+<head>
+  <title>Dove into Webrtc example for RTCPeerConnection</title>
+  <meta charset="utf-8">
+  <link href="peer.css" rel="stylesheet">
+  <script type="text/javascript" src="peerclient.js"></script>
+  <script src="adapter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="infobox">
+      <h1>Example of RTC peer connection</h1>
+      <h2>Click the name in the user list to establish a webrtc connection</h2>
+      <p>Input username: <input id="name" type="text" maxlength="12" required autocomplete="username" inputmode="verbatim" placeholder="Username">
+        <input type="button" name="login" value="Join" onclick="connect()"></p>
+    </div>
+    <ul class="userlistbox"></ul>
+    <div class="logbox"></div>
+    <div class="camerabox">
+      <video id="received_video" autoplay></video>
+      <video id="local_video" autoplay muted></video>
+    </div>
+  </div>
+</body>
+</html>
