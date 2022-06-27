@@ -4,7 +4,7 @@ class ChromaKey {
 
     getImageFrame() {
         const backgroundImg = new Image();
-        backgroundImg.src = 'media/beach.jpg';
+        backgroundImg.src = 'background/beach.jpg';
 
         backgroundImg.onload = () => {
             const imageCanvas = document.createElement('canvas');

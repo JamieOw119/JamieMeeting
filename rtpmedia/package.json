@@ -1,0 +1,15 @@
+{
+  "name": "peer_connect",
+  "version": "1.0.0",
+  "description": "A simple WebSocket-based peer connect demo",
+  "homepage": "",
+  "license": "CC0",
+  "author": "jamie",
+  "main": "peerserver.js",
+  "scripts": {},
+  "dependencies": {
+    "http-serve": "^1.0.1",
+    "websocket": "^1.0.34",
+    "yargs": "^17.5.1"
+  }
+}
