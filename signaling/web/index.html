@@ -4,27 +4,29 @@
 -->
 <html>
 <head>
-  <title>c</title>
+  <title>Dove into Webrtc example for RTCPeerConnection</title>
   <meta charset="utf-8">
   <link href="peer.css" rel="stylesheet">
   <script type="text/javascript" src="peerclient.js"></script>
   <script type="text/javascript" src="processor.js"></script>
+  <script type="text/javascript" src="signalingclient.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
   <script src="adapter.js"></script>
 </head>
 <body>
   <div class="container">
     <div class="infobox">
-      <h1>Example of RTP media management</h1>
+      <h1>Example of Signaling</h1>
       <h2>Click the name in the user list to establish a webrtc connection</h2>
       <div>
         Input username: 
         <input id="name" type="text" maxlength="12" required autocomplete="username" inputmode="verbatim" placeholder="Username">
-        <input type="button" name="login" value="Join" onclick="connect()">
+        <input type="button" name="login" value="加入" onclick="connect()">
       </div>
       <div>
         Setting video code rate(kbps): 
         <input id="bitrate" type="number" maxlength="12" required>
-        <input type="button" id="updateBitrate" value="Update" onclick="updateBitrate()" disabled>
+        <input type="button" id="updateBitrate" value="更新" onclick="updateBitrate()" disabled>
       </div>
       <div>
         Choosing video coding format: 
@@ -33,7 +35,7 @@
           <option value="VP9">VP9</option>
           <option value="H264">H264</option>
         </select>
-        <input type="button" id="selectCodec" value="Choose" onclick="selectCodec()">
+        <input type="button" id="selectCodec" value="选择" onclick="selectCodec()">
       </div>
       <div>
         <input type="checkbox" id="replace" value="true" onclick="replaceBackground()" disabled>Replace background
