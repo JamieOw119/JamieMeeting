@@ -2,7 +2,7 @@
   "name": "signaling-server",
   "version": "1.0.0",
   "scripts": {
-    "start": "ts-node server.ts --cert ./certs/rtc.liweix.com.pem --key ./certs/rtc.liweix.com.key",
+    "start": "ts-node server.ts --cert ./certs/rtc.jamie.com.pem --key ./certs/rtc.jamie.com.key",
     "build": "tsc; cp start.sh dist/",
     "pack": "webpack"
   },
@@ -19,7 +19,7 @@
     "debug": "^4.1.1",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
-    "got": "^10.5.5",
+    "got": "^12.1.0",
     "helmet": "^3.21.2",
     "log4js": "^6.3.0",
     "socket.io": "^2.3.0",
@@ -28,10 +28,10 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.2",
-    "@types/yargs": "^15.0.3",
+    "@types/got": "^9.6.9",
     "@types/node": "^13.1.2",
     "@types/socket.io": "^2.1.4",
-    "@types/got": "^9.6.9",
+    "@types/yargs": "^15.0.3",
     "ts-loader": "^6.2.1",
     "typescript": "^3.6.4",
     "webpack": "^4.41.6",

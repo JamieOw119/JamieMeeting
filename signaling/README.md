@@ -24,5 +24,5 @@ sudo npm start
 ## open in browser
 
 ```bash
-https://localhost/
+https://localhost:8080
 ```

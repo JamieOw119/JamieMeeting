@@ -1,0 +1,30 @@
+[2022-07-03T21:07:43.764] [INFO] Server - Listening at 443...
+[2022-07-03T21:07:43.797] [INFO] Server - Running socketio server....
+[2022-07-03T21:08:16.378] [INFO] Server - Listening at 8080...
+[2022-07-03T21:08:16.390] [INFO] Server - Running socketio server....
+[2022-07-03T21:34:16.397] [INFO] Server - Listening at 8080...
+[2022-07-03T21:34:16.411] [INFO] Server - Running socketio server....
+[2022-07-03T21:34:43.024] [INFO] Server - connection request [roomId:"signalingtestroom", peerId:"s5064v1l"]
+[2022-07-03T21:34:43.026] [INFO] Server - creating a new Room [roomId:"signalingtestroom"]
+[2022-07-03T21:34:43.027] [INFO] Room - create() [roomId:"signalingtestroom"]
+[2022-07-03T21:34:43.028] [INFO] Room - constructor() [roomId:"signalingtestroom"]
+[2022-07-03T21:34:43.031] [INFO] Peer - constructor() [id:"s5064v1l", socket:"h04P_EtrVCllqJhwAAAA"]
+[2022-07-03T21:34:43.032] [INFO] Room - handlePeer() id: s5064v1l, address: ::1
+[2022-07-03T21:34:43.033] [INFO] Server - new peer, s5064v1l, h04P_EtrVCllqJhwAAAA
+[2022-07-03T21:34:43.048] [DEBUG] Room - Peer "request" event [room:"signalingtestroom", method:"join", peerId:"s5064v1l"]
+[2022-07-03T21:34:43.059] [DEBUG] Room - peer joined [peer: "s5064v1l", displayName: "jamie", picture: "undefined", platform: "undefined"]
+[2022-07-03T21:34:56.792] [INFO] Server - connection request [roomId:"signalingtestroom", peerId:"stsgr8bk"]
+[2022-07-03T21:34:56.800] [INFO] Peer - constructor() [id:"stsgr8bk", socket:"OXH52BIML8V2zOntAAAB"]
+[2022-07-03T21:34:56.801] [INFO] Room - handlePeer() id: stsgr8bk, address: ::1
+[2022-07-03T21:34:56.802] [INFO] Server - new peer, stsgr8bk, OXH52BIML8V2zOntAAAB
+[2022-07-03T21:34:56.842] [DEBUG] Room - Peer "request" event [room:"signalingtestroom", method:"join", peerId:"stsgr8bk"]
+[2022-07-03T21:34:56.862] [DEBUG] Room - peer joined [peer: "stsgr8bk", displayName: "kate", picture: "undefined", platform: "undefined"]
+[2022-07-03T21:35:08.519] [DEBUG] Room - Peer "request" event [room:"signalingtestroom", method:"sdpOffer", peerId:"s5064v1l"]
+[2022-07-03T21:35:08.538] [DEBUG] Room - Peer "request" event [room:"signalingtestroom", method:"newIceCandidate", peerId:"s5064v1l"]
+[2022-07-03T21:35:08.578] [DEBUG] Room - Peer "request" event [room:"signalingtestroom", method:"newIceCandidate", peerId:"s5064v1l"]
+[2022-07-03T21:35:08.643] [DEBUG] Room - Peer "request" event [room:"signalingtestroom", method:"newIceCandidate", peerId:"s5064v1l"]
+[2022-07-03T21:35:08.649] [DEBUG] Room - Peer "request" event [room:"signalingtestroom", method:"newIceCandidate", peerId:"s5064v1l"]
+[2022-07-03T21:35:08.692] [DEBUG] Room - Peer "request" event [room:"signalingtestroom", method:"sdpAnswer", peerId:"stsgr8bk"]
+[2022-07-03T21:35:08.710] [DEBUG] Room - Peer "request" event [room:"signalingtestroom", method:"newIceCandidate", peerId:"stsgr8bk"]
+[2022-07-03T21:36:16.023] [DEBUG] Peer - "socket disconnect" event [id:stsgr8bk], reason: transport close
+[2022-07-03T21:36:16.025] [DEBUG] Peer - "socket disconnect" event [id:s5064v1l], reason: transport close
