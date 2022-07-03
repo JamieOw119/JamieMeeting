@@ -1,0 +1,56 @@
+<!doctype html>
+<!--
+  Dove into Webrtc example for RTCPeerConnection
+-->
+<html>
+<head>
+  <title>Dove into Webrtc example for RTCPeerConnection</title>
+  <meta charset="utf-8">
+  <link href="peer.css" rel="stylesheet">
+  <script type="text/javascript" src="signalingclient.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="adapter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="infobox">
+      <h1>Example of data channel</h1>
+      <h2>Click the name in the user list to establish a webrtc connection</h2>
+      <div>
+        Input username: 
+        <input id="name" type="text" maxlength="12" required autocomplete="username" inputmode="verbatim" placeholder="Username">
+        <input type="button" name="login" value="join" onclick="connect()">
+      </div>
+      <div>
+        <form id="fileInfo">
+          <input type="file" id="fileInput" name="files"  disabled/>
+        </form>
+        <button id="sendFile" onclick="sendFile()" disabled>Send</button>
+      </div>
+      <div class="progress">
+        <span class="label">Send progress: </span>
+        <progress id="sendProgress" max="0" value="0"></progress>
+        <span class="label">Receive progress: </span>
+        <progress id="receiveProgress" max="0" value="0"></progress>
+        <span id="bitrate"></span>
+      </div>
+      <div id="bitrate"></div>
+      <a id="download"></a>
+    </div>
+    <ul class="userlistbox"></ul>
+    <div class="chatbox">
+    </div>
+    <div class="camerabox">
+      <video id="received_video" autoplay></video>
+      <video id="local_video" autoplay muted></video>
+    </div>
+    <div class="empty-container"></div>
+    <div class="chat-controls">
+      Chat:<br/>
+      <input id="textInput" type="text" size="100" maxlength="256" placeholder="say something..." autocomplete="off" disabled>
+      <input type="button" id="sendText" name="send" value="send" onclick="handleSendButton()" disabled>
+    </div>
+  </div>
+  <script type="text/javascript" src="peerclient.js"></script>
+</body>
+</html>
