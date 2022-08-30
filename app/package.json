@@ -2,7 +2,7 @@
   "name": "wilearning",
   "version": "2.0.0",
   "description": "WiLearning Client",
-  "author": "liwei <linewei@gmail.com>",
+  "author": "jamie <1139937387@qq.com>",
   "license": "AGPL",
   "scripts": {
     "ng": "ng",

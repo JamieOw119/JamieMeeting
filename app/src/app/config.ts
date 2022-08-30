@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 liwei<linewei@gmail.com>
+ * Copyright (c) 2020 jamie<1139937387@qq.com>
  *
  * This program is free software: you can use, redistribute, and/or modify
  * it under the terms of the GNU Affero General Public License, version 3
@@ -15,15 +15,15 @@
 import { environment } from '../environments/environment';
 
 export const MediaServer = {
-  address: 'rtc.liweix.com',
+  address: 'rtc.jamie.com',
 };
 
 export const AdminServer = {
-  address: 'rtc.liweix.com',
+  address: 'rtc.jamie.com',
 };
 
 export const DocServer = {
-  address: 'rtc.liweix.com'
+  address: 'rtc.jamie.com'
 };
 
 export const RequestConnectVideoTimeout = 60;
